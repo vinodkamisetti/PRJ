@@ -1,12 +1,12 @@
 data_paths:
-  raw_data_path: "./../artifacts/data/raw_data"
-  clean_data_path: "./../artifacts/data/cleaned_data"
-  processed_data_path: "./../artifactes/processed_data"
-  raw_data_file: loan_approval_dataset.csv
+  raw_data_path: './../artifacts/data/raw_data'
+  clean_data_path: './../artifacts/data/cleaned_data'
+  processed_data_path: './../artifacts/data/processed_data'
+  raw_data_file: BankChurners.csv
   
 mlflow:
   run_name: first_model
 
 preprocess:
   test_size: 0.4
-  Target: loan_amount
+  Target: Income_Category

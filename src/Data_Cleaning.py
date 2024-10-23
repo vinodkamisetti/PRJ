@@ -15,7 +15,7 @@ clean_data_path = config['data_paths']['clean_data_path']
 
 def data_cleaning(raw_data_path, clean_data_path):
     raw_data_file = os.listdir(raw_data_path)[0]
-    print("####Data Cleaning Stated###")
+    print("####Data Cleaning Started###")
     raw_data = os.path.join(raw_data_path, raw_data_file)
     df = pd.read_csv(raw_data)
 

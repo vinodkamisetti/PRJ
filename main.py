@@ -16,6 +16,8 @@ os.environ['MLFLOW_TRACKING_PASSWORD'] = secrets['mlflow']['MLFLOW_TRACKING_PASS
 
 run_name = config['mlflow']['run_name']
 
+mlflow.set_experiment("New")
+
 def main(run_name):
     print("[INFO] MLOps pipeline triggerd")
     with mlflow.start_run(run_name=run_name):

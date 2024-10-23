@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/mlops/prj/src/mlruns/0/38b232251dee47349927f938dff67512/artifacts
+end_time: 1729699436450
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38b232251dee47349927f938dff67512
+run_name: orderly-snake-83
+run_uuid: 38b232251dee47349927f938dff67512
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729699436379
+status: 3
+tags: []
+user_id: User
