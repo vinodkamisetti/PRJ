@@ -26,10 +26,10 @@ def processed_data(clean_data_path, processed_data_path, Target):
 
     mlflow.log_param("test_size", test_size)
 
-    X_train.to_csv(os.path.join(processed_data_path, "X_train.csv"))
-    X_test.to_csv(os.path.join(processed_data_path, "X_test.csv"))
-    y_train.to_csv(os.path.join(processed_data_path, "y_train.csv"))
-    y_test.to_csv(os.path.join(processed_data_path, "y_test.csv"))
+    X_train.to_csv(os.path.join(processed_data_path, "X_train.csv"), index=False)
+    X_test.to_csv(os.path.join(processed_data_path, "X_test.csv"), index=False)
+    y_train.to_csv(os.path.join(processed_data_path, "y_train.csv"),index=False)
+    y_test.to_csv(os.path.join(processed_data_path, "y_test.csv"), index=False)
     print("##### Preprocessed Finished####")
 
 if __name__ =="__main__":
