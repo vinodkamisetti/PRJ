@@ -20,6 +20,7 @@ def main(run_name):
     print("[INFO] MLOps pipeline triggerd")
     with mlflow.start_run(run_name=run_name):
         mlflow.run("./src", entry_point="Data_Cleaning.py", env_manager="local", run_name="Data_Cleaning")
+        mlflow.run("./src", entry_point="Data_Preprocessing.py", env_manager="local", run_name="Data_Preprocessing")
 
 if __name__ =="__main__":
     parser = argparse.ArgumentParser()
