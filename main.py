@@ -16,7 +16,7 @@ os.environ['MLFLOW_TRACKING_PASSWORD'] = secrets['mlflow']['MLFLOW_TRACKING_PASS
 
 run_name = config['mlflow']['run_name']
 
-mlflow.set_experiment("New")
+mlflow.set_experiment("Prj")
 
 def main(run_name):
     print("[INFO] MLOps pipeline triggerd")
@@ -25,6 +25,7 @@ def main(run_name):
         mlflow.run("./src", entry_point="Data_Preprocessing.py", env_manager="local", run_name="Data_Preprocessing")
         mlflow.run("./src", entry_point="Data_Building.py", env_manager="local", run_name="Data_Building")
         mlflow.run("./src", entry_point="Data_Evaluation.py", env_manager="local", run_name="Data_Evaluation")
+        mlflow.run("./src", entry_point="Model_Fetching.py", env_manager="local", run_name="Model_Fetching")
 
 if __name__ =="__main__":
     parser = argparse.ArgumentParser()

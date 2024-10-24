@@ -3,10 +3,13 @@ data_paths:
   clean_data_path: './../artifacts/data/cleaned_data'
   processed_data_path: './../artifacts/data/processed_data'
   model_path: './../artifacts/model/raw_model'
+  best_model_path: './../artifacts/model/best_model/'
   raw_data_file: homeprices.csv
   
 mlflow:
   run_name: first_model
+  experiment_name: New
+  
 
 preprocess:
   test_size: 0.4

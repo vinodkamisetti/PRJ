@@ -18,11 +18,11 @@ def model_eval(processed_data_path, model_path):
     model_path_file = os.path.join(model_path, "linear_model.pkl")
     model = pickle.load(open(model_path_file, 'rb'))
 
-    x_test_path = os.path.join(processed_data_path, "X_test.csv")
-    y_test_path = os.path.join(processed_data_path, "y_test.csv")
+    x_train_path = os.path.join(processed_data_path, "X_test.csv")
+    y_train_path = os.path.join(processed_data_path, "y_test.csv")
 
-    x_train = pd.read_csv(x_test_path)
-    y_train = pd.read_csv(y_test_path)
+    x_train = pd.read_csv(x_train_path)
+    y_train = pd.read_csv(y_train_path)
 
     y_pred_train = model.predict(x_train)
 
