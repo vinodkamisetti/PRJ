@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/mlops/prj/src/mlruns/0/673329732c0d4d7cbc6be7c59019e9e2/artifacts
+end_time: 1729714711565
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 673329732c0d4d7cbc6be7c59019e9e2
+run_name: nervous-seal-253
+run_uuid: 673329732c0d4d7cbc6be7c59019e9e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729714711518
+status: 3
+tags: []
+user_id: User
