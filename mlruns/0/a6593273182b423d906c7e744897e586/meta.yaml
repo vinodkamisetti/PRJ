@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/mlops/prj/src/mlruns/0/a6593273182b423d906c7e744897e586/artifacts
+end_time: 1729714751866
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a6593273182b423d906c7e744897e586
+run_name: welcoming-shad-448
+run_uuid: a6593273182b423d906c7e744897e586
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729714745233
+status: 3
+tags: []
+user_id: User

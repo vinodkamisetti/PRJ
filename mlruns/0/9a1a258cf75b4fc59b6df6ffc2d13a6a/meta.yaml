@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/mlops/prj/src/mlruns/0/9a1a258cf75b4fc59b6df6ffc2d13a6a/artifacts
+end_time: 1729714734963
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9a1a258cf75b4fc59b6df6ffc2d13a6a
+run_name: sedate-snail-42
+run_uuid: 9a1a258cf75b4fc59b6df6ffc2d13a6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729714734915
+status: 3
+tags: []
+user_id: User
