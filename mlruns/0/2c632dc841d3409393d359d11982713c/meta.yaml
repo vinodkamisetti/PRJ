@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/mlops/prj/src/mlruns/0/2c632dc841d3409393d359d11982713c/artifacts
+end_time: 1729771751204
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2c632dc841d3409393d359d11982713c
+run_name: worried-shrike-928
+run_uuid: 2c632dc841d3409393d359d11982713c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729771745154
+status: 3
+tags: []
+user_id: User
