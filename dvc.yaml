@@ -1,0 +1,32 @@
+stages:
+  Data_Cleaning:
+    cmd: Data_Cleaning.clean_data_path -o artifacts/data/cleaned_data/homeprice.csv
+      python Data_Cleaning.py
+    deps:
+    - Data_Cleaning.py
+    - artifacts/data/raw_data/homeprice.csv
+    params:
+    - Data_Cleaning.raw_data_path
+  Data_preprocessing:
+    cmd: Data_Preprocessing.processed_data_path -o artifacts/data/processed_data/X_test.csv,
+      artifacts/data/processed_data/X_train.csv artifacts/data/processed_data/y_test.csv,
+      artifacts/data/processed_data/y_train.csv
+    deps:
+    - Data_Preprocessing.py
+    - artifacts/data/cleaned_data/homeprice.csv
+    params:
+    - Data_preprocessing.clean_data_path
+  Data_Building:
+    cmd: artifacts/data/processed_data/y_train.csv -p Data_Building.processed_data_path,
+      Data_Building.model_path -o artifacts/model/raw_model/linear_model.pkl python
+      Data_Building.py
+    deps:
+    - Data_Building.py
+    - artifacts/data/processed_data/X_train.csv
+  Data_Evaluation:
+    cmd: artifacts/data/processed_data/y_test.csv -p Data_Evaluation.processed_data_path,
+      Data_Evaluation.model_path -o artifacts/model/raw_model/linear_model.pkl python
+      Data_Evaluation.py
+    deps:
+    - Data_Evaluation.py
+    - artifacts/data/processed_data/X_test.csv
